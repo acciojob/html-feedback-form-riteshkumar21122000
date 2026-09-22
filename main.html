@@ -8,51 +8,56 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-<h1>Input Elements
-</h1>
-	<form method="post">
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Element</th>
-                <th>ID</th>
-                <th>Type</th>
-                <th>Attributes</th>
-                <th>Label Required</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Name</td>
-                <td>name</td>
-                <td>Text</td>
-                <td>minlength="3", maxlength="50", required</td>
-                <td>Yes</td>
-            </tr>
-            <tr>
-                <td>Portfoli</td>
-                <td>portfoli</td>
-                <td>URL</td>
-                <td>required</td>
-                <td>Yes</td>
-            </tr>
-            <tr>
-                <td>Favorite Color</td>
-                <td>favColor</td>
-                <td>Color</td>
-                <td>N/A</td>
-                <td>Yes</td>
-            </tr>
-            <tr>
-                <td>Likeness</td>
-                <td>likeness</td>
-                <td>Range</td>
-                <td>min="1", max="100"</td>
-                <td>Yes</td>
-            </tr>
-        </tbody>
-    </table>
-	</form>
+
+    <h1>Feedback Form</h1>
+
+    <form method="post">
+
+        <label for="name">Name</label>
+        <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            minlength="3" 
+            maxlength="50" 
+            required
+        >
+
+        <br><br>
+
+        <label for="portfolio">Portfolio</label>
+        <input 
+            type="url" 
+            id="portfolio" 
+            name="portfolio" 
+            required
+        >
+
+        <br><br>
+
+        <label for="favColor">Favorite Color</label>
+        <input 
+            type="color" 
+            id="favColor" 
+            name="favColor"
+        >
+
+        <br><br>
+
+        <label for="likeness">Likeness</label>
+        <input 
+            type="range" 
+            id="likeness" 
+            name="likeness" 
+            min="1" 
+            max="100"
+        >
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
